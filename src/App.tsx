@@ -1,15 +1,12 @@
 import './App.css';
 
-import { useState } from 'react';
-
-import PasswordInput from '@/components/password-checker/PasswordInput';
+import PasswordChecker from '@/components/password-checker/PasswordChecker';
 
 function App() {
-  const [password, setPassword] = useState('');
   return (
     <div className="mx-auto flex">
-      <div className="w-[400px] overflow-hidden rounded p-6 shadow-lg">
-        <PasswordInput value={password} onChange={setPassword} />
+      <div className="w-[400px] rounded shadow-lg">
+        <PasswordChecker />
       </div>
     </div>
   );
