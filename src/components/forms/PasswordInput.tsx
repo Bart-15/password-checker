@@ -19,6 +19,7 @@ const PasswordInput = ({ value, onChange }: PasswordInputProps) => {
         value={value}
         className="mb-3 w-full rounded border p-2"
         onChange={(e) => onChange(e.target.value)}
+        placeholder="Password"
       />
     </>
   );
