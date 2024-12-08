@@ -12,7 +12,7 @@ const PasswordChecker = () => {
   return (
     <div className="p-6">
       <PasswordInput value={password} onChange={setPassword} />
-      <StrengthIndicator strength={strength} />
+      {password ? <StrengthIndicator strength={strength} /> : null}
       <RequirementList password={password} />
     </div>
   );
